@@ -6,7 +6,8 @@ get '/' do
 end
 
 get '/name' do
-  if params[:name].downcase == "collin"
+  @name = (params[:name] || "Nobody").downcase
+  if @name == "collin"
     redirect 'http://www.youtube.com/watch?v=oHg5SJYRHA0'
   else
     erb :name
