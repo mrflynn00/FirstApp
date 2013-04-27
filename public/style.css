@@ -1,7 +1,76 @@
 h1 {
-  color: green;
+  color: #00000;
 }
 
 .bordered {
   border: 1px solid #2325ff;
+}
+
+.prettybutton{
+	text-decoration: none;
+}
+
+
+body {
+	background: url(http://www.freecodesource.com/wallpaper/minecraftworld-955075.jpeg);
+}
+
+.resize {
+    width: 100px;
+    height: auto;
+}
+
+* {
+  font-family: Arial;
+}
+
+body {
+    background: #e8f4f9;
+}
+
+.box {
+  width: 800px;
+  height: 400px;
+  margin: 100px auto;
+  border: 10px solid #899194;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: url(http://www.freecodesource.com/wallpaper/minecraftworld-955075.jpeg);
+  padding: 40px 10px;;
+  box-sizing:border-box;
+}
+.box .title {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+input {
+    font-size: 24px;
+    border: none;
+    border-bottom: 1px dotted lightgrey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    background: url(http://www.freecodesource.com/wallpaper/minecraftworld-955075.jpeg);
+}
+
+.bordered {
+     border: 1px solid #2325ff;
+}
+
+.error {
+  margin: 100px auto -120px auto;
+  background: #ffdde2;
+  color: #b23435;
+  height: 90px;
+  width: 400px;
+  border: 10px solid #b23435;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5;
+  box-sizing:border-box;
 }
