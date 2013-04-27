@@ -35,17 +35,6 @@ post '/login' do
     @error = "Wrong username."
     erb :newindex
   end
-  if @username == 'nasilemak999'
-    if @password == 'potato'
-      erb :home
-    else
-      @error = "Hey dummy, you got the password wrong"
-      erb :newindex
-    end
-  else
-    @error = "Wrong username."
-    erb :newindex
-  end
 end
 
 get '/name' do
