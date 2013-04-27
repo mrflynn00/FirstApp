@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  erb :newnewindex
+  erb :newindex
 end
 
 get '/logins' do
@@ -17,7 +17,7 @@ get '/logins' do
     end
   else
     @error = "Wrong username"
-    erb :newnewindex
+    erb :newindex
   end
 end
 
@@ -29,11 +29,11 @@ post '/login' do
       erb :home
     else
       @error = "Hey dude, you got the password wrong"
-      erb :newnewindex
+      erb :newindex
     end
   else
     @error = "Wrong username."
-    erb :newnewindex
+    erb :newindex
   end
 end
 
