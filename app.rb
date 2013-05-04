@@ -10,7 +10,7 @@ get '/logins' do
   @password = params[:password]
   if @username == 'mrflynn00'
     if @password == 'derp'
-      redirect "/name?name=jpoz&state=Oregon"
+      redirect "/secrets"
     else
       @error = "Wrong Password"
       erb :newindex
@@ -45,4 +45,11 @@ get '/name' do
   else
     erb :newname
   end
+end
+
+get '/secrets' do
+  return redirect '/' unless session[:user]
+  @graph = Koala::Facebook::API.new
+  @picture = @graph.get_picture('jpozelc') 
+  erb :secret
 end
